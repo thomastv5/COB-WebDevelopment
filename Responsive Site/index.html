@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="mobile-menu-icon" id="mobile-menu-icon">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav>
+      <div class="container">
+        <h1>Thomas Furniture Co.</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+    <section class="hero">
+      <div class="container">
+        <h2 id="words">Discover the Perfect Furniture for Your Home</h2>
+        <p id="words">
+          Elevate your living spaces with our exquisite collection of furniture.
+        </p>
+        <a href="#" class="btn">Explore Now</a>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <div class="container">
+        <h2>Featured Products</h2>
+        <div class="parent">
+          <div class="column">
+            <div class="product">
+              <img src="./assets/images/sofa.jpeg" alt="sofa" />
+              <h3>Modern Sofa Set</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+                quas at deserunt est. Accusamus, qui!
+              </p>
+              <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="product">
+              <img src="./assets/images/table.jpeg" alt="table" />
+              <h3>Wooden Dining Table</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                mollitia voluptatibus amet eum culpa molestiae!
+              </p>
+              <a href="#" class="btn">View Details</a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="product">
+              <img src="./assets/images/bed.jpeg" alt="bed frame" />
+              <h3>Luxury Bed Frame</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                officia quae, laboriosam ducimus voluptatibus deserunt!
+              </p>
+              <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="product">
+              <img src="./assets/images/cupboards.jpeg" alt="cupboards" />
+              <h3>Spacious Cupboards</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                officia quae, laboriosam ducimus voluptatibus deserunt!
+              </p>
+              <a href="#" class="btn">View Details</a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="product">
+              <img src="./assets/images/sidetable.jpeg" alt="side table" />
+              <h3>Ornate Side Tables</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                officia quae, laboriosam ducimus voluptatibus deserunt!
+              </p>
+              <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="product">
+              <img src="./assets/images/chair.jpeg" alt="wooden chairs" />
+              <h3>Exquisite Wooden Chairs</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                officia quae, laboriosam ducimus voluptatibus deserunt!
+              </p>
+              <a href="#" class="btn">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Thomas Furniture Co. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#mobile-menu-icon").click(function() {
+          $("#mobile-nav").slideToggle();
+        });
+      });
+    </script>
+  </body>
+  </html>
+  </body>
+</html>

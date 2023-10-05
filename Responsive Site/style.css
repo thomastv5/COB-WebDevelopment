@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;600&display=swap');
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #bc9600;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: #4f2703;
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header li {
+  margin-right: 20px;
+}
+
+header li a:hover {
+  color: #868686;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero {
+  background-image: url('hero-background.jpg');
+  background-size: cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+hero h2 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+h2 {
+  margin: 15px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4f2703;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.hero .btn:hover {
+  background-color: #67350a;
+}
+
+.featured-products {
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.parent {
+  margin: 5px;
+  display: flex;
+  gap: 2rem;
+}
+
+.column {
+  flex-basis: calc(33.33% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product {
+  background-color: #965f30;
+  border: 1px solid #000000;
+  flex: 1 1 calc(50% - 20px);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.product p {
+  font-size: 16px;
+}
+
+.product .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4f2703;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.product .btn:hover {
+  background-color: #67350a;
+}
+
+footer {
+  background-color: #4f2703;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.mobile-nav {
+  display: none;
+  background-color: #4f2703;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav li {
+  margin: 15px 0;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.mobile-menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+}
+
+.bar {
+  background-color: #fff;
+  height: 3px;
+  width: 30px;
+  margin: 5px 0;
+  transition: transform 0.4s ease;
+}
+
+.mobile-nav {
+  display: none;
+  background-color: #4f2703;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav li {
+  margin: 15px 0;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.mobile-menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+}
+
+.bar {
+  background-color: #fff;
+  height: 3px;
+  width: 30px;
+  margin: 5px 0;
+  transition: transform 0.4s ease;
+}
+
+@media screen and (max-width: 768px) {
+  header ul {
+    display: none;
+  }
+  
+  .mobile-menu-icon {
+    display: block;
+  }
+  
+  .mobile-nav {
+    display: block;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .hero .btn {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  header ul {
+    display: flex;
+  }
+  
+  .mobile-menu-icon {
+    display: none;
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
